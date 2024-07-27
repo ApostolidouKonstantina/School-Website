@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WIS Project - Products</title>
+    <link rel="stylesheet" href="products.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- BEGIN CODE HERE -->
+
+        <!-- header 2 -->    
+        <header>
+          <nav class="navbar navbar-expand-lg border-bottom" style="height: 150px">
+              <div class="container">
+                  <img src="logo.png" float="left" width="250px" height="58px">
+                  <div class="d-flex">
+                      <a class="btn btn-outline-primary me-2" href="homepage.html" role="button">Home</a>
+                      <a class="btn btn-primary" href="products.html" role="button">Products</a>
+                  </div>
+              </div>
+          </nav>
+      </header>
+
+    <main class="my-5 align-content-center">
+      <div class="container" style="width: 1200px;">
+  
+          <!-- frame 4 -->
+          <div class="row my-5">
+              <form class="d-flex" role="search">
+                  <div class="form-group row"><label class="col-form-label mb-3" style="width: 150px">Search a product</label>
+                  <div class="input-group" style="width: 300px; height: 30px;"><input id="getName" name="getName" class="form-control" type="text">
+                  <button id="getSearch" class="btn btn-primary" type="button">Search</button></div></div>
+              </form> 
+  
+              <h5>Results</h5>
+              <div style="width: 1200px;">
+                  <table style="width: 1200px" class="table table-bordered">
+                  <thead> <tr>
+                      <th scope="col" style="width:200px;">ID</th>
+                      <th scope="col" style="width:200px;">Name</th>
+                      <th scope="col" style="width:200px;">Production year</th>
+                      <th scope="col" style="width:200px;">Price</th>
+                      <th scope="col" style="width:200px;">Color</th>
+                      <th scope="col" style="width:200px;">Size</th>
+                  </tr> </thead>
+                  <tbody> 
+                  </tbody> 
+                </table> 
+              <p id="resultsTable"> </p>
+              </div> 
+  
+            </div>
+                
+  
+          <!-- frame 5 -->
+          <div class="row my-5">
+            <div class="container d-flex" style="width:1200px"> 
+                <div class="row justify-content-center align-items-center" style="width:1200px" > <h5> Add a product </h5> <form>
+                <div class="form-group row"> <label for="name" class="col-form-label" style="width: 150px">Name</label>
+                  <div style="width: 300px"> <input type="text" class="form-control" id="name" name="name">
+                  </div> </div> <br>
+                <div class="form-group row"> <label for="productionyear" class="col-form-label" style="width: 150px">Production year</label>
+                  <div style="width: 300px"> <input type="text" class="form-control" id="productionyear" name="productionyear">
+                  </div> </div> <br>
+                <div class="form-group row"> <label for="price" class="col-form-label" style="width: 150px">Price</label>
+                  <div style="width: 300px"> <input type="text" class="form-control" id="price" name="price">
+                  </div> </div> <br>
+                <div class="form-group row"> <label for="color" class="col-form-label" style="width: 150px">Color</label>
+                  <div style="width: 300px"> <input type="text" class="form-control" id="color" name="color">
+                  </div> </div> <br>
+                <div class="form-group row"> <label for="size" class="col-form-label0" style="width: 150px">Size</label>
+                  <div style="width: 300px"> <input type="text" class="form-control" id="size" name="size">
+                  </div> </div>
+                </form> 
+                    
+                <div class="container-fluid d-flex flex-row-reverse align-items-end">
+                  <button id="postReq" class="btn btn-primary" type="button">Save</button>
+                </div>
+                 </div> </div>
+        </div>
+    </div>
+  </main>
+
+    <!-- footer 2 --> 
+    <footer class="footer border-top py-3 text-center" style="height: 100px">
+      <div class="container">
+          <span> Apostolidou Konstantina </span>
+      </div>
+   </footer>
+  
+  
+      <!-- END CODE HERE -->
+    <script src="products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
